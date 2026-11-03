@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym</title>
+   
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- 1. Cabeçalho e menu de navegação -->
+    <header>
+        <a href="#hero" class="logo">
+            <img src="./img/fitzone.png" alt="Logotipo da FitZone Gym">
+            <span>FitZone Gym</span>
+        </a>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 2. Banner principal -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Transforme seu corpo. Supere seus limites!</h1>
+
+                <p>
+                    Alcance seus objetivos com treinos personalizados,
+                    profissionais qualificados e uma estrutura completa.
+                </p>
+
+                <a href="#contato" class="btn">
+                    Quero me matricular
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Sobre a academia -->
+        <section id="sobre">
+            <h2>Conheça a FitZone Gym</h2>
+
+            <article>
+                <h3>Nossa história</h3>
+                <p>
+                    A FitZone Gym nasceu com o objetivo de
+                    incentivar a prática de atividades físicas e
+                    proporcionar mais saúde e qualidade de vida.
+                </p>
+            </article>
+
+            <article>
+                <h3>Nossa missão</h3>
+                <p>
+                    Ajudar cada aluno a alcançar seus objetivos por
+                    meio de exercícios físicos, orientação profissional
+                    e incentivo a hábitos saudáveis.
+                </p>
+            </article>
+
+            <article>
+                <h3>Nossos diferenciais</h3>
+                <ul>
+                    <li>Profissionais qualificados.</li>
+                    <li>Equipamentos modernos.</li>
+                    <li>Ambiente acolhedor e motivador.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 4. Modalidades oferecidas -->
+        <section id="modalidades">
+            <h2>Nossas modalidades</h2>
+            <p>Encontre a atividade ideal para você.</p>
+
+            <div class="modalidades-container">
+
+                <article class="modalidade">
+                    <h3>Musculação</h3>
+                    <p>
+                        Exercícios com pesos para desenvolver força,
+                        resistência e massa muscular.
+                    </p>
+                </article>
+
+                <article class="modalidade">
+                    <h3>Spinning</h3>
+                    <p>
+                        Aulas de ciclismo indoor para melhorar o
+                        condicionamento físico e queimar calorias.
+                    </p>
+                </article>
+
+                <article class="modalidade">
+                    <h3>Crossfit</h3>
+                    <p>
+                        Treinos dinâmicos que combinam força,
+                        resistência e movimentos funcionais.
+                    </p>
+                </article>
+
+                <article class="modalidade">
+                    <h3>Yoga</h3>
+                    <p>
+                        Prática que combina posturas, respiração
+                        e concentração para promover equilíbrio e bem-estar.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 5. Planos e preços -->
+        <section id="planos">
+            <h2>Nossos planos</h2>
+            <p>Escolha o plano ideal para sua rotina.</p>
+
+            <div class="planos-container">
+
+                <article class="plano">
+                    <h3>Basic</h3>
+                    <p class="preco">R$ 79,90/mês</p>
+
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Equipamentos da academia</li>
+                        <li>Avaliação inicial</li>
+                    </ul>
+
+                    <a href="#contato" class="btn">
+                        Escolher Basic
+                    </a>
+                </article>
+
+                <article class="plano">
+                    <h3>Pro</h3>
+                    <p class="preco">R$ 119,90/mês</p>
+
+                    <ul>
+                        <li>Todos os benefícios do Basic</li>
+                        <li>Aulas de spinning</li>
+                        <li>Acompanhamento de treino</li>
+                    </ul>
+
+                    <a href="#contato" class="btn">
+                        Escolher Pro
+                    </a>
+                </article>
+
+                <article class="plano">
+                    <h3>Premium</h3>
+                    <p class="preco">R$ 159,90/mês</p>
+
+                    <ul>
+                        <li>Todos os benefícios do Pro</li>
+                        <li>Aulas de yoga e Crossfit</li>
+                        <li>Acompanhamento personalizado</li>
+                    </ul>
+
+                    <a href="#contato" class="btn">
+                        Escolher Premium
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 6. Formulário de contato -->
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <p>Preencha o formulário para saber mais sobre nossos planos.</p>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="plano">Plano de interesse:</label>
+                    <select id="plano" name="plano" required>
+                        <option value="">Selecione um plano</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Pro">Pro</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Enviar mensagem
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 7. Rodapé com informações da academia -->
+    <footer>
+        <div class="footer-content">
+
+            <div>
+                <h3>FitZone Gym</h3>
+                <p>Seu objetivo é a nossa motivação!</p>
+            </div>
+
+            <div>
+                <h3>Endereço</h3>
+                <address>
+                    Rua Exemplo, 100 - Centro<br>
+                    Caruaru - PE
+                </address>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <p>
+                    Telefone:
+                    <a href="tel:+5581999999999">
+                        (81) 99999-9999
+                    </a>
+                </p>
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@fitzonegym.com">
+                        contato@fitzonegym.com
+                    </a>
+                </p>
+            </div>
+
+            <div>
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 FitZone Gym.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

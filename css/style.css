@@ -1,0 +1,450 @@
+
+/* =====================================
+   1. CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 70px 8%;
+    scroll-margin-top: 30px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+section > p {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #666;
+}
+
+/* =====================================
+   2. CABEÇALHO E MENU
+===================================== */
+
+header {
+    background-color: #151515;
+    color: white;
+    padding: 15px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff3333;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+/* =====================================
+   3. BANNER PRINCIPAL
+===================================== */
+
+#hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("../img/academia.png") no-repeat;
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* =====================================
+   4. BOTÕES
+===================================== */
+
+.btn {
+    display: inline-block;
+
+    background-color: #e32636;
+    color: white;
+
+    padding: 13px 25px;
+    border-radius: 5px;
+
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b51220;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   5. SOBRE A ACADEMIA
+===================================== */
+
+#sobre {
+    background-color: white;
+}
+
+#sobre article {
+    background-color: #f4f4f4;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #e32636;
+    border-radius: 5px;
+}
+
+#sobre article h3 {
+    color: #e32636;
+    margin-bottom: 10px;
+}
+
+#sobre article p {
+    color: #555;
+}
+
+/* =====================================
+   6. MODALIDADES
+===================================== */
+
+#modalidades {
+    background-color: #ededed;
+}
+
+.modalidades-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.modalidade {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+
+    border-radius: 8px;
+    border-bottom: 4px solid #e32636;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.modalidade:hover {
+    transform: translateY(-7px);
+}
+
+.modalidade h3 {
+    color: #e32636;
+    margin-bottom: 15px;
+}
+
+.modalidade p {
+    color: #555;
+}
+
+/* =====================================
+   7. PLANOS E PREÇOS
+===================================== */
+
+#planos {
+    background-color: white;
+}
+
+.planos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.plano {
+    background-color: #191919;
+    color: white;
+
+    padding: 30px 25px;
+    text-align: center;
+
+    border-radius: 8px;
+    border-top: 5px solid #e32636;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.plano:hover {
+    transform: translateY(-7px);
+}
+
+.plano h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff4545;
+    margin-bottom: 20px;
+}
+
+.plano ul {
+    margin-bottom: 25px;
+}
+
+.plano li {
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* =====================================
+   8. FORMULÁRIO DE CONTATO
+===================================== */
+
+#contato {
+    background-color: #ededed;
+}
+
+#contato form {
+    max-width: 650px;
+    margin: 30px auto 0;
+
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #e32636;
+}
+
+#contato button {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* =====================================
+   9. RODAPÉ
+===================================== */
+
+footer {
+    background-color: #151515;
+    color: white;
+    padding: 45px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.footer-content h3 {
+    color: #ff4545;
+    margin-bottom: 15px;
+}
+
+.footer-content p,
+.footer-content address {
+    color: #ccc;
+    font-style: normal;
+}
+
+.footer-content a {
+    color: #ccc;
+}
+
+.footer-content a:hover {
+    color: #ff4545;
+}
+
+.footer-content ul li {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+/* =====================================
+   10. RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .modalidades-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    #hero {
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .modalidades-container {
+        grid-template-columns: 1fr;
+    }
+
+    .planos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+}
